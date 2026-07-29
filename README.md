@@ -1,6 +1,12 @@
 # 🌋 Vulkan
 
-Site sobre vulcões, desenvolvido como trabalho da disciplina **Programação Web**. O projeto apresenta o que são vulcões, suas partes e tipos, além de curiosidades, filmes e documentários relacionados ao tema.
+Site institucional sobre vulcões, desenvolvido como trabalho da disciplina **Programação Web**. O projeto apresenta o que são vulcões, suas partes e tipos, além de curiosidades, filmes e documentários relacionados ao tema.
+
+[![Ver página publicada](https://img.shields.io/badge/demo-GitHub%20Pages-ff5722?style=for-the-badge)](https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/)
+
+🔗 **Acesse a página publicada:** [https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/](https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/)
+
+> Substitua `SEU-USUARIO` e `NOME-DO-REPOSITORIO` pelos valores reais assim que o GitHub Pages estiver ativado (veja a seção [Publicação](#-publicação-github-pages) abaixo).
 
 ## 🔗 Páginas
 
@@ -34,6 +40,32 @@ vulkan/
 └── musicas/               # trilha sonora de fundo (mp3)
 ```
 
+## ▶️ Como executar
+
+Não há dependências nem build. Basta abrir o arquivo `index.html` diretamente no navegador, ou servir a pasta com qualquer servidor estático:
+
+```bash
+# Python
+python3 -m http.server 8000
+
+# Node
+npx serve .
+```
+
+Depois acesse `http://localhost:8000`.
+
+## 🚀 Publicação (GitHub Pages)
+
+Para publicar (ou atualizar) a versão online do site:
+
+1. Faça o push do projeto para o GitHub.
+2. No repositório, vá em **Settings → Pages**.
+3. Em **Source**, selecione a branch `main` e a pasta `/root`.
+4. Salve e aguarde alguns instantes — o GitHub gera a URL no formato:
+   ```
+   https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/
+   ```
+5. Atualize o link no topo deste README com a URL gerada.
 
 ## ✅ Boas práticas aplicadas
 
