@@ -1,120 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-   <meta charset="UTF-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Vulkan</title>
-   <link rel="stylesheet" href="./css/filmes.css" /> 
-   <link rel="shortcut icon" href="./imagens/icone_vulcao.png" /> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Filmes sobre vulcões: Volcano - A Fúria, O Inferno de Dante, Céu em Chamas e Lava." />
+  <title>Vulkan | Filmes</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./imagens/icone_vulcao.png" />
 </head>
 
-<body tabindex="0">  
- <header>
-      <h1>Vulkan</h1> 
-		<img id="logo" src="./imagens/logo.jpg"/> 
- </header>
- 
- <nav id="menu">
-	<span class="menu_icon"></span> 
-    <ul>
+<body>
+  <header>
+    <h1>Vulkan</h1>
+    <img id="logo" src="./imagens/logo.jpg" alt="Logotipo do site Vulkan" />
+  </header>
+
+  <nav id="menu">
+    <div class="menu_faixa">
+      <span class="menu_marca">Vulkan</span>
+      <input type="checkbox" id="menu_toggle" />
+      <label class="menu_icon" for="menu_toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </label>
+      <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./vulcoes.html">Vulcões</a></li>
-        <li><a href="./curiosidades.html">Curiosidade</a></li>
-		<li><a href="./midias.html">Filmes</a></li>
-		<li><a href="./documentarios.html">documentários</a></li>
-    </ul>
- </nav>
- <section id="midias">
-      <article id="art_audios"> 
-        <div class="audio">    
-          <audio src="./musicas/deadend.mp3"  controls="controls" >
-          
-          </audio>
-        </div>    
-        <div class="audio">
-           
-          <audio src="./musicas/CornfieldChase.mp3"  controls="controls" >
+        <li><a href="./curiosidades.html">Curiosidades</a></li>
+        <li><a href="./midias.html" class="ativo">Filmes</a></li>
+        <li><a href="./documentarios.html">Documentários</a></li>
+      </ul>
+    </div>
+  </nav>
 
-          </audio>
-        </div>
-      </article>
-</section>
-<main id="container">		
+  <section id="midias">
+    <p class="legenda_audio">Trilha sonora para navegar pelo site</p>
+    <div class="faixa_audios">
+      <div class="audio">
+        <audio src="./musicas/deadend.mp3" controls></audio>
+      </div>
+      <div class="audio">
+        <audio src="./musicas/CornfieldChase.mp3" controls></audio>
+      </div>
+    </div>
+  </section>
+
+  <main id="container">
     <section id="secao">
-		<article class="artigo">
-			<h2>Filmes:</h2>
-			<h2>Volcano - A Fúria</h2>
-				<p>Um terremoto atinge Los Angeles, e o diretor da Defesa Civil Mike Roark interrompe suas férias para ajudar a cidade. 
-				A geóloga Amy Barnes alerta que um vulcão pode se formar nas redes de esgoto, mas não consegue apresentar evidências para que Roark faça algo. 
-				Pouco depois, um terremoto mais forte libera a lava do subterrâneo, derretendo e queimando tudo pelo caminho. 
-				Roark e Barnes tentam bolar um plano para conter a lava e dar fim à destruição que a erupção vulcânica está causando.</p>
-			<h2>Trailer</h2>
-				<aside id="barra_lateral">
-					<div id="videos">
-						<figure>
-							<a href="https://www.youtube.com/watch?v=MDN18yHEv2I&ab_channel=xCrink2" target="_blank">
-								<img src="./imagens/volcano.jpg" width="500" height="315" >	
-							</a>
-						</figure>
-					</div>
-				</aside>
-				
-			<h2>O Inferno de Dante</h2>
-				<p>O vulcanólogo Harry Dalton chega à cidade de Dante's Peak para uma investigação. 
-				Quatro anos antes, uma erupção na Colômbia vitimou sua parceira, Marianne. 
-				Harry acredita que o vulcão dormente está prestes a entrar em atividade, 
-				e sua única aliada na cidade é a prefeita, Rachel Wando, cuja família é uma das que estão em risco. 
-				Agora resta saber se o título de segundo melhor lugar do mundo para morar será prejudicado pela ameaça da natureza.</p>
-			<h2>Trailer</h2>
-				<aside id="barra_lateral">
-					<div id="videos">
-						<figure>
-							<a href="https://www.youtube.com/watch?v=YF01zkES0wU&ab_channel=MEUSTRAILERSFAVORITOS" target="_blank">
-								<img src="./imagens/inferno.jpg" width="500" height="315" >	
-							</a>
-						</figure>
-					</div>
-				</aside>
-				
-				<h2>Céu em Chamas</h2>
-				<p>O geólogo Wentao Li prometeu que nunca mais voltaria à Ilha Tianhuo depois que a erupção catastrófica de um vulcão matou tragicamente sua esposa. 
-				Mas, 20 anos depois, sua filha Meng continua seu trabalho de pesquisa na ilha que tirou a vida de sua mãe, 
-				desenvolvendo um sistema de previsão de erupções brilhante, que pode salvar inúmeras vidas.</p>
-			<h2>Trailer</h2>
-				<aside id="barra_lateral">
-					<div id="videos">
-						<figure>
-							<a href="https://www.youtube.com/watch?v=LxMCW7FkeLo&ab_channel=californiafilmes" target="_blank">
-								<img src="./imagens/ceu.jpg" width="500" height="315" >	
-							</a>
-						</figure>
-					</div>
-				</aside>
-				
-				<h2>Lava</h2>
-				<p>Uku é um vulcão solitário, romântico e que canta todos os dias em busca de amor. 
-				Quando está praticamente extinto, ele encontra Lele, um vulcão que estava sob as águas.</p>
-			<h2>Trailer</h2>
-				<aside id="barra_lateral">
-					<div id="videos">
-						<figure>
-							<a href="https://www.youtube.com/watch?v=GzZezqJ9VgI&ab_channel=DisneyUK" target="_blank">
-								<img src="./imagens/lava.jpg" width="500" height="315" >	
-							</a>
-						</figure>
-					</div>
-				</aside>
-					
-		</article>	
-		
-		
-	</section>
-</main>
+      <article class="artigo">
+        <h2>Filmes</h2>
 
-  <footer id="rodape">  
+        <div class="bloco-media">
+          <h3>Volcano — A Fúria</h3>
+          <p>
+            Um terremoto atinge Los Angeles, e o diretor da Defesa Civil Mike Roark interrompe suas férias para
+            ajudar a cidade. A geóloga Amy Barnes alerta que um vulcão pode se formar nas redes de esgoto, mas não
+            consegue apresentar evidências para que Roark tome providências. Pouco depois, um terremoto mais forte
+            libera a lava do subterrâneo, derretendo e queimando tudo pelo caminho. Roark e Barnes tentam bolar um
+            plano para conter a lava e dar fim à destruição causada pela erupção vulcânica.
+          </p>
+          <aside class="barra_lateral">
+            <a class="card-video" href="https://www.youtube.com/watch?v=MDN18yHEv2I" target="_blank" rel="noopener">
+              <img src="./imagens/volcano.jpg" alt="Trailer do filme Volcano - A Fúria" />
+            </a>
+          </aside>
+        </div>
+
+        <div class="bloco-media">
+          <h3>O Inferno de Dante</h3>
+          <p>
+            O vulcanólogo Harry Dalton chega à cidade de Dante's Peak para uma investigação. Quatro anos antes, uma
+            erupção na Colômbia vitimou sua parceira, Marianne. Harry acredita que o vulcão dormente está prestes a
+            entrar em atividade, e sua única aliada na cidade é a prefeita, Rachel Wando, cuja família é uma das que
+            estão em risco. Agora resta saber se o título de segundo melhor lugar do mundo para se viver será
+            prejudicado pela ameaça da natureza.
+          </p>
+          <aside class="barra_lateral">
+            <a class="card-video" href="https://www.youtube.com/watch?v=YF01zkES0wU" target="_blank" rel="noopener">
+              <img src="./imagens/inferno.jpg" alt="Trailer do filme O Inferno de Dante" />
+            </a>
+          </aside>
+        </div>
+
+        <div class="bloco-media">
+          <h3>Céu em Chamas</h3>
+          <p>
+            O geólogo Wentao Li prometeu que nunca mais voltaria à Ilha Tianhuo depois que a erupção catastrófica de
+            um vulcão tirou tragicamente a vida de sua esposa. Mas, 20 anos depois, sua filha Meng continua o
+            trabalho de pesquisa na ilha que matou sua mãe, desenvolvendo um sistema de previsão de erupções que
+            pode salvar inúmeras vidas.
+          </p>
+          <aside class="barra_lateral">
+            <a class="card-video" href="https://www.youtube.com/watch?v=LxMCW7FkeLo" target="_blank" rel="noopener">
+              <img src="./imagens/ceu.jpg" alt="Trailer do filme Céu em Chamas" />
+            </a>
+          </aside>
+        </div>
+
+        <div class="bloco-media">
+          <h3>Lava</h3>
+          <p>
+            Uku é um vulcão solitário e romântico que canta todos os dias em busca de amor. Quando está praticamente
+            extinto, ele encontra Lele, um vulcão que estava submerso.
+          </p>
+          <aside class="barra_lateral">
+            <a class="card-video" href="https://www.youtube.com/watch?v=GzZezqJ9VgI" target="_blank" rel="noopener">
+              <img src="./imagens/lava.jpg" alt="Curta-metragem Lava, da Disney/Pixar" />
+            </a>
+          </aside>
+        </div>
+
+      </article>
+    </section>
+  </main>
+
+  <footer id="rodape">
     <address id="sobre">
+      Site <strong>Vulkan</strong> — trabalho acadêmico da disciplina de Programação Web.
     </address>
   </footer>
- </body>
+</body>
 </html>

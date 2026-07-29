@@ -1,100 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-   <meta charset="UTF-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Vulkan</title>
-   <link rel="stylesheet" href="./css/documentario.css" /> 
-   <link rel="shortcut icon" href="./imagens/icone_vulcao.png" /> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Documentários sobre vulcões: Katia e Maurice Krafft, Vulcão Whakaari e Visita ao Inferno." />
+  <title>Vulkan | Documentários</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./imagens/icone_vulcao.png" />
 </head>
 
-<body tabindex="0">  
- <header>
-      <h1>Vulkan</h1>
-		<img id="logo" src="./imagens/logo.jpg"/> 
- </header>
- 
- <nav id="menu">
-	<span class="menu_icon"></span> 
-    <ul>
+<body>
+  <header>
+    <h1>Vulkan</h1>
+    <img id="logo" src="./imagens/logo.jpg" alt="Logotipo do site Vulkan" />
+  </header>
+
+  <nav id="menu">
+    <div class="menu_faixa">
+      <span class="menu_marca">Vulkan</span>
+      <input type="checkbox" id="menu_toggle" />
+      <label class="menu_icon" for="menu_toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </label>
+      <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./vulcoes.html">Vulcões</a></li>
-        <li><a href="./curiosidades.html">Curiosidade</a></li>
-		<li><a href="./midias.html">Filmes</a></li>
-		<li><a href="./documentarios.html">documentários</a></li>
-    </ul>
- </nav>
- <section id="midias">
-      <article id="art_audios"> 
-        <div class="audio">    
-          <audio src="./musicas/deadend.mp3"  controls="controls" >
-          
-          </audio>
-        </div>    
-        <div class="audio">
-           
-          <audio src="./musicas/CornfieldChase.mp3"  controls="controls" >
+        <li><a href="./curiosidades.html">Curiosidades</a></li>
+        <li><a href="./midias.html">Filmes</a></li>
+        <li><a href="./documentarios.html" class="ativo">Documentários</a></li>
+      </ul>
+    </div>
+  </nav>
 
-          </audio>
-        </div>
-      </article>
-</section>
-<main id="container">		
+  <section id="midias">
+    <p class="legenda_audio">Trilha sonora para navegar pelo site</p>
+    <div class="faixa_audios">
+      <div class="audio">
+        <audio src="./musicas/deadend.mp3" controls></audio>
+      </div>
+      <div class="audio">
+        <audio src="./musicas/CornfieldChase.mp3" controls></audio>
+      </div>
+    </div>
+  </section>
+
+  <main id="container">
     <section id="secao">
-		<article class="artigo">
-			<h2>Documentários:</h2>
-			<h2>Vulcões: A Tragédia de Katia e Maurice Krafft</h2>
-				<p>O casal de intrépidos cientistas Katia e Maurice Krafft morrem em uma explosão vulcânica fazendo exatamente o que os uniu: 
-				desvendando os mistérios dos vulcões por meio da captura de algumas das imagens mais explosivas da natureza.</p>
-			<h2>Trailer</h2>
-				<aside id="barra_lateral">
-					<div id="videos">
-						<figure>
-							<a href="https://www.youtube.com/watch?v=nFe0fRPqX5o&ab_channel=TrailersBR" target="_blank">
-								<img src="./imagens/tragedia.jpg" width="500" height="315" >	
-							</a>
-						</figure>
-					</div>
-				</aside>
-				
-			<h2>Vulcão Whakaari: Resgate na Nova Zelândia</h2>
-				<p>Com imagens detalhadas, relatos de sobreviventes e das equipes de resgate, 
-				documentário retrata a erupção vulcânica que aconteceu na Nova Zelândia em 2019.</p>
-			<h2>Trailer</h2>
-				<aside id="barra_lateral">
-					<div id="videos">
-						<figure>
-							<a href="https://www.youtube.com/watch?v=tl6edLw-h7g&ab_channel=TeleFilmsPlus" target="_blank">
-								<img src="./imagens/wha.jpg" width="500" height="315" >	
-							</a>
-						</figure>
-					</div>
-				</aside>
-	
-				
-			<h2>Visita ao Inferno</h2>
-				<p>Com incríveis imagens de erupções e rios de lava, Werner Herzog captura a força brutal dos vulcões e sua relação com ritos religiosos indígenas.</p>
-			<h2>Trailer</h2>
-				<aside id="barra_lateral">
-					<div id="videos">
-						<figure>
-							<a href="https://www.youtube.com/watch?v=6uMsFhxcMgw&ab_channel=NetflixBrasil" target="_blank">
-								<img src="./imagens/visita.jpg" width="500" height="315" >	
-							</a>
-						</figure>
-					</div>
-				</aside>
-					
-		</article>	
-		
-		
-	</section>
-</main>
+      <article class="artigo">
+        <h2>Documentários</h2>
 
-  <footer id="rodape">  
+        <div class="bloco-media">
+          <h3>Vulcões: A Tragédia de Katia e Maurice Krafft</h3>
+          <p>
+            O casal de intrépidos cientistas Katia e Maurice Krafft morre em uma explosão vulcânica fazendo
+            exatamente o que os uniu: desvendar os mistérios dos vulcões por meio da captura de algumas das imagens
+            mais explosivas da natureza.
+          </p>
+          <aside class="barra_lateral">
+            <a class="card-video" href="https://www.youtube.com/watch?v=nFe0fRPqX5o" target="_blank" rel="noopener">
+              <img src="./imagens/tragedia.jpg" alt="Trailer do documentário sobre Katia e Maurice Krafft" />
+            </a>
+          </aside>
+        </div>
+
+        <div class="bloco-media">
+          <h3>Vulcão Whakaari: Resgate na Nova Zelândia</h3>
+          <p>
+            Com imagens detalhadas e relatos de sobreviventes e equipes de resgate, o documentário retrata a
+            erupção vulcânica ocorrida na Nova Zelândia em 2019.
+          </p>
+          <aside class="barra_lateral">
+            <a class="card-video" href="https://www.youtube.com/watch?v=tl6edLw-h7g" target="_blank" rel="noopener">
+              <img src="./imagens/wha.jpg" alt="Trailer do documentário sobre o Vulcão Whakaari" />
+            </a>
+          </aside>
+        </div>
+
+        <div class="bloco-media">
+          <h3>Visita ao Inferno</h3>
+          <p>
+            Com incríveis imagens de erupções e rios de lava, Werner Herzog captura a força bruta dos vulcões e sua
+            relação com ritos religiosos indígenas.
+          </p>
+          <aside class="barra_lateral">
+            <a class="card-video" href="https://www.youtube.com/watch?v=6uMsFhxcMgw" target="_blank" rel="noopener">
+              <img src="./imagens/visita.jpg" alt="Trailer do documentário Visita ao Inferno" />
+            </a>
+          </aside>
+        </div>
+
+      </article>
+    </section>
+  </main>
+
+  <footer id="rodape">
     <address id="sobre">
+      Site <strong>Vulkan</strong> — trabalho acadêmico da disciplina de Programação Web.
     </address>
   </footer>
- </body>
+</body>
 </html>

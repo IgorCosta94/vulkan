@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-   <meta charset="UTF-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Vulkan</title>
-   <link rel="stylesheet" href="./css/site.css" />  
-   <link rel="shortcut icon" href="./imagens/icone_vulcao.png" /> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vulkan — tudo sobre vulcões: o que são, como se formam, tipos, curiosidades, filmes e documentários." />
+  <title>Vulkan | Início</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./imagens/icone_vulcao.png" />
 </head>
- 
-<body tabindex="0">  
- <header>
-      <h1>Vulkan</h1>
-		<img id="logo" src="./imagens/logo.jpg"/> 
- </header>
- 
- <nav id="menu">
-	<span class="menu_icon"></span> 
-    <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./vulcoes.html">Vulcões</a></li>
-        <li><a href="./curiosidades.html">Curiosidade</a></li>
-		<li><a href="./midias.html">Filmes</a></li>
-		<li><a href="./documentarios.html">documentários</a></li>
-    </ul>
- </nav>
-<main id="container">		
-    <section id="secao">
-		<article class="artigo">
-			<h2>O que são vulcões</h2>
-				<p>Vulcões são estruturas geológicas presentes em terra ou no mar,que se comunicam com a câmara magmatica,local de armazenamento do magma,
-					permitindo que o magma, rocha fundida em alta temperatura, e outras substancias como,por exemplo, particulas quentes(cinzas) e gases cheguem até a superficie do planeta.</p>
-				<p>Os vulcões são formados pelo choque das placas tectônicas, pelo afastamento delas e pela subida das rochas 
-					do interior do planeta para a superficie criando uma canal de comunicação entre a superficie e a câmara magmatica presente no interior  
-					do planeta.</p>
-			<h2>Partes que formam um vulcão</h2>	
-				<h3>Câmara magmáica</h3>
-					<p>é o reservatório no interior da Terra onde se acumula magma, uma mistura de silicatos fundidos, cristais em suspensão e gases dissolvidos.</p>
-				<h3>Chaminé vulcânica</h3>
-					<p>é o canal por onde o magma ascende até a superfície.</p>
-				<h3>Cone vulcânico</h3>
-					<p>é a estrutura formada pela acumulação de material expelido pela chaminé vulcânica.</p>
-				<h3>Cratera</h3>
-					<p>é a abertura na parte superior do cone vulcânico.</p>
-		</article>	
-	
-		<article id="fotos" class="artigo">
-			<div id="fotos">
-				<figure>
-					<img src="./imagens/partes_do_vulcao.webp"/>
-				</figure>
-			</div>
-		</article>
-	</section>
-</main>
 
-  <footer id="rodape">  
+<body>
+  <header>
+    <h1>Vulkan</h1>
+    <img id="logo" src="./imagens/logo.jpg" alt="Logotipo do site Vulkan" />
+  </header>
+
+  <nav id="menu">
+    <div class="menu_faixa">
+      <span class="menu_marca">Vulkan</span>
+      <input type="checkbox" id="menu_toggle" />
+      <label class="menu_icon" for="menu_toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </label>
+      <ul>
+        <li><a href="./index.html" class="ativo">Home</a></li>
+        <li><a href="./vulcoes.html">Vulcões</a></li>
+        <li><a href="./curiosidades.html">Curiosidades</a></li>
+        <li><a href="./midias.html">Filmes</a></li>
+        <li><a href="./documentarios.html">Documentários</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="container">
+    <section id="secao">
+      <article class="artigo">
+        <h2>O que são vulcões</h2>
+        <p>
+          Vulcões são estruturas geológicas presentes em terra ou no mar que se comunicam com a câmara magmática,
+          local de armazenamento do magma. Essa comunicação permite que o magma — rocha fundida em alta temperatura —
+          e outras substâncias, como partículas quentes (cinzas) e gases, cheguem até a superfície do planeta.
+        </p>
+        <p>
+          Os vulcões se formam pelo choque entre placas tectônicas, pelo afastamento delas ou pela subida de rochas
+          do interior da Terra em direção à superfície, criando um canal de comunicação entre a superfície e a
+          câmara magmática presente no interior do planeta.
+        </p>
+
+        <h2>Partes que formam um vulcão</h2>
+        <h3>Câmara magmática</h3>
+        <p>
+          É o reservatório no interior da Terra onde se acumula magma, uma mistura de silicatos fundidos, cristais
+          em suspensão e gases dissolvidos.
+        </p>
+        <h3>Chaminé vulcânica</h3>
+        <p>É o canal por onde o magma ascende até a superfície.</p>
+        <h3>Cone vulcânico</h3>
+        <p>É a estrutura formada pela acumulação de material expelido pela chaminé vulcânica.</p>
+        <h3>Cratera</h3>
+        <p>É a abertura localizada na parte superior do cone vulcânico.</p>
+
+        <div class="galeria">
+          <figure>
+            <img src="./imagens/partes_do_vulcao.webp" alt="Ilustração das partes que compõem um vulcão: câmara magmática, chaminé, cone e cratera" />
+          </figure>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer id="rodape">
     <address id="sobre">
+      Site <strong>Vulkan</strong> — trabalho acadêmico da disciplina de Programação Web.
     </address>
   </footer>
- </body>
+</body>
 </html>

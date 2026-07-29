@@ -1,100 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-   <meta charset="UTF-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Vulkan</title>
-   <link rel="stylesheet" href="./css/curiosidades.css" /> 
-   <link rel="shortcut icon" href="./imagens/icone_vulcao.png" /> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Curiosidades sobre grandes erupções vulcânicas e supervulcões como Yellowstone e Campi Flegrei." />
+  <title>Vulkan | Curiosidades</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./imagens/icone_vulcao.png" />
 </head>
 
+<body>
+  <header>
+    <h1>Vulkan</h1>
+    <img id="logo" src="./imagens/logo.jpg" alt="Logotipo do site Vulkan" />
+  </header>
 
-<body tabindex="0">  
- <header>
-      <h1>Vulkan</h1>    
-		<img id="logo" src="./imagens/logo.jpg"/> 
- </header>
- 
- <nav id="menu">
-	<span class="menu_icon"></span> 
-    <ul>
+  <nav id="menu">
+    <div class="menu_faixa">
+      <span class="menu_marca">Vulkan</span>
+      <input type="checkbox" id="menu_toggle" />
+      <label class="menu_icon" for="menu_toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </label>
+      <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./vulcoes.html">Vulcões</a></li>
-        <li><a href="./curiosidades.html">Curiosidade</a></li>
-		<li><a href="./midias.html">Filmes</a></li>
-		<li><a href="./documentarios.html">documentários</a></li>
-    </ul>
- </nav>
-<main id="container">	
-	
-	<section id="secao">
-	<article class="artigo">
-		
-		<h2>Grandes Erupções</h2>	
-		<h3>Anak Krakatoa</h3>
-			<aside id="barra_lateral">
-					<div id="videos">
-						<figure>
-							<a href="https://www.youtube.com/watch?v=kI-JnqZf9s0&ab_channel=SpaceToday" target="_blank">
-								<img src="./imagens/anak.jpg" width="500" height="315" >	
-							</a>
-						</figure>
-					</div>
-				</aside>
-	
-		<h2>Outras Erupções</h2>
-			<aside id="barra_lateral">
-				<div id="videos">
-						<figure>
-							<a href="https://www.youtube.com/watch?v=eRvObKZsMus&ab_channel=BBCNewsBrasil" target="_blank">
-								<img src="./imagens/tonga.jpg" width="500" height="315" >	
-							</a>
-						</figure>
-					</div>
-			</aside>
-			
-		<h2>Supervucões</h2>	
-		<h3>Yellowstone </h3>
-			<aside id="barra_lateral">
-				<div id="videos">
-				<figure>
-						<a href="https://www.youtube.com/watch?v=u8m1Rh6wL4A&ab_channel=CanalHistoryBrasil" target="_blank">
-							<img src="./imagens/ye.jpg" width="500" height="315">	
-						</a>
-					</figure>
-			</aside>
-	
-		<h2>Supervucões</h2>	
-		<h3>CAMPI FLEGREI</h3>
-			<aside id="barra_lateral">
-				<div id="videos">
-					<figure>
-						<a href="https://www.youtube.com/watch?v=NdU4IdZ78U8&ab_channel=SpaceToday" target="_blank">
-							<img src="./imagens/campi.jpg" width="500" height="315">	
-						</a>
-					</figure>
-					
-				</div>	
-			</aside>
-			
-		<h2>Informações aleatoria sobre vulcões</h2>	
-			<aside id="barra_lateral">
-				<div id="videos">
-					<figure>
-						<a href="https://www.youtube.com/watch?v=QLCCtvkpPGs&ab_channel=CortesdoIntelig%C3%AAncia%5BOFICIAL%5D" target="_blank">
-							<img src="./imagens/sao.jpg" width="500" height="315">	
-						</a>
-					</figure>
-				</div>
-			</aside>
-	</article>
-	</section>
-</main>
+        <li><a href="./curiosidades.html" class="ativo">Curiosidades</a></li>
+        <li><a href="./midias.html">Filmes</a></li>
+        <li><a href="./documentarios.html">Documentários</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <footer id="rodape">  
+  <main id="container">
+    <section id="secao">
+      <article class="artigo">
+
+        <div class="bloco-media">
+          <h2>Grandes erupções</h2>
+          <h3>Anak Krakatoa</h3>
+          <aside class="barra_lateral">
+            <a class="card-video" href="https://www.youtube.com/watch?v=kI-JnqZf9s0" target="_blank" rel="noopener">
+              <img src="./imagens/anak.jpg" alt="Vídeo sobre a erupção do Anak Krakatoa" />
+            </a>
+          </aside>
+        </div>
+
+        <div class="bloco-media">
+          <h3>Outras erupções recentes</h3>
+          <aside class="barra_lateral">
+            <a class="card-video" href="https://www.youtube.com/watch?v=eRvObKZsMus" target="_blank" rel="noopener">
+              <img src="./imagens/tonga.jpg" alt="Vídeo sobre a erupção vulcânica em Tonga" />
+            </a>
+          </aside>
+        </div>
+
+        <div class="bloco-media">
+          <h2>Supervulcões</h2>
+          <h3>Yellowstone</h3>
+          <aside class="barra_lateral">
+            <a class="card-video" href="https://www.youtube.com/watch?v=u8m1Rh6wL4A" target="_blank" rel="noopener">
+              <img src="./imagens/ye.jpg" alt="Vídeo sobre o supervulcão de Yellowstone" />
+            </a>
+          </aside>
+        </div>
+
+        <div class="bloco-media">
+          <h3>Campi Flegrei</h3>
+          <aside class="barra_lateral">
+            <a class="card-video" href="https://www.youtube.com/watch?v=NdU4IdZ78U8" target="_blank" rel="noopener">
+              <img src="./imagens/campi.jpg" alt="Vídeo sobre o supervulcão Campi Flegrei" />
+            </a>
+          </aside>
+        </div>
+
+        <div class="bloco-media">
+          <h2>Informações aleatórias sobre vulcões</h2>
+          <aside class="barra_lateral">
+            <a class="card-video" href="https://www.youtube.com/watch?v=QLCCtvkpPGs" target="_blank" rel="noopener">
+              <img src="./imagens/sao.jpg" alt="Vídeo com curiosidades sobre vulcões" />
+            </a>
+          </aside>
+        </div>
+
+      </article>
+    </section>
+  </main>
+
+  <footer id="rodape">
     <address id="sobre">
+      Site <strong>Vulkan</strong> — trabalho acadêmico da disciplina de Programação Web.
     </address>
   </footer>
- </body>
+</body>
 </html>

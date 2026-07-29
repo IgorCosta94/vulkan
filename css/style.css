@@ -1,0 +1,416 @@
+/* =========================================================
+   VULKAN — folha de estilos única e moderna
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --cor-lava: #ff5722;
+  --cor-lava-escura: #d84315;
+  --cor-magma: #ff9800;
+  --cor-fundo: #12100e;
+  --cor-fundo-secao: #1a1714;
+  --cor-cartao: #221d19;
+  --cor-texto: #ece5df;
+  --cor-texto-suave: #b8afa6;
+  --cor-borda: #342c25;
+  --fonte-titulo: 'Montserrat', sans-serif;
+  --fonte-texto: 'Inter', sans-serif;
+  --raio: 14px;
+  --sombra: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 90px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  line-height: 1.7;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+/* ============ HEADER ============ */
+
+header {
+  position: relative;
+  padding: 110px 5% 70px;
+  background:
+    linear-gradient(180deg, rgba(18, 16, 14, 0.35) 0%, rgba(18, 16, 14, 0.92) 100%),
+    url(../imagens/vulcao.jpg) center 30% / cover no-repeat;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 18px;
+  font-family: var(--fonte-titulo);
+  font-weight: 800;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 4px 24px rgba(255, 87, 34, 0.55);
+}
+
+header img#logo {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--cor-lava);
+  box-shadow: var(--sombra);
+  margin: 0 auto;
+}
+
+/* ============ NAV ============ */
+
+nav#menu {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(18, 16, 14, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+nav#menu .menu_faixa {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+nav#menu .menu_marca {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  color: var(--cor-magma);
+  padding: 16px 0;
+  letter-spacing: 1px;
+}
+
+/* Checkbox invisível controla o menu no mobile (funciona com clique/toque) */
+nav#menu input#menu_toggle {
+  display: none;
+}
+
+nav#menu label.menu_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+nav#menu label.menu_icon span {
+  display: block;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--cor-magma);
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+nav#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  flex-basis: 100%;
+  transition: max-height .35s ease;
+}
+
+nav#menu input#menu_toggle:checked ~ ul {
+  max-height: 400px;
+}
+
+nav#menu li a {
+  display: block;
+  padding: 14px 4px;
+  text-decoration: none;
+  color: var(--cor-texto);
+  font-weight: 600;
+  font-family: var(--fonte-titulo);
+  font-size: 0.95rem;
+  border-top: 1px solid var(--cor-borda);
+  transition: color .2s ease;
+}
+
+nav#menu li a:hover,
+nav#menu li a:focus,
+nav#menu li a.ativo {
+  color: var(--cor-magma);
+}
+
+/* ============ LAYOUT PRINCIPAL ============ */
+
+main#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 5% 70px;
+}
+
+section#secao {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+article.artigo {
+  background-color: var(--cor-fundo-secao);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 36px clamp(20px, 4vw, 48px);
+}
+
+h2 {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff;
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--cor-lava);
+  display: inline-block;
+}
+
+article.artigo h2 + h2,
+article.artigo h3 + h2 {
+  margin-top: 8px;
+}
+
+h3 {
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--cor-magma);
+  margin: 28px 0 10px;
+}
+
+p {
+  margin: 0 0 18px;
+  color: var(--cor-texto-suave);
+  max-width: 75ch;
+}
+
+/* ============ GALERIA DE FOTOS (home) ============ */
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.galeria figure {
+  margin: 0;
+  border-radius: var(--raio);
+  overflow: hidden;
+  border: 1px solid var(--cor-borda);
+}
+
+.galeria figure img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.galeria figure:hover img {
+  transform: scale(1.05);
+}
+
+/* ============ BLOCOS DE TIPO DE VULCÃO ============ */
+
+.bloco-tipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin: 18px 0 10px;
+}
+
+.card-imagem {
+  margin: 0;
+  border-radius: var(--raio);
+  overflow: hidden;
+  border: 1px solid var(--cor-borda);
+  background-color: var(--cor-cartao);
+}
+
+.card-imagem img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.card-video {
+  position: relative;
+  display: block;
+  border-radius: var(--raio);
+  overflow: hidden;
+  border: 1px solid var(--cor-borda);
+}
+
+.card-video img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  filter: brightness(.75);
+  transition: filter .3s ease, transform .4s ease;
+}
+
+.card-video:hover img {
+  filter: brightness(.55);
+  transform: scale(1.04);
+}
+
+.card-video::after {
+  content: "▶";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 87, 34, 0.9);
+  color: #fff;
+  font-size: 1.3rem;
+  box-shadow: var(--sombra);
+}
+
+/* ============ TRAILERS / VÍDEOS (curiosidades, filmes, documentarios) ============ */
+
+.bloco-media {
+  border-bottom: 1px solid var(--cor-borda);
+  padding-bottom: 34px;
+  margin-bottom: 34px;
+}
+
+.bloco-media:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+aside.barra_lateral {
+  margin-top: 12px;
+}
+
+aside.barra_lateral .card-video {
+  max-width: 560px;
+}
+
+/* ============ PLAYER DE ÁUDIO (trilha sonora) ============ */
+
+section#midias {
+  background-color: var(--cor-fundo-secao);
+  border-bottom: 1px solid var(--cor-borda);
+  padding: 26px 5%;
+}
+
+section#midias .faixa_audios {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+section#midias p.legenda_audio {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 6px;
+  font-family: var(--fonte-titulo);
+  font-size: .85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--cor-texto-suave);
+}
+
+.audio {
+  background-color: var(--cor-cartao);
+  border: 1px solid var(--cor-borda);
+  border-radius: 999px;
+  padding: 8px 14px;
+}
+
+.audio audio {
+  display: block;
+  width: 280px;
+  max-width: 60vw;
+}
+
+/* ============ RODAPÉ ============ */
+
+footer#rodape {
+  background-color: var(--cor-fundo-secao);
+  border-top: 1px solid var(--cor-borda);
+  padding: 30px 5%;
+  text-align: center;
+}
+
+footer#rodape address {
+  font-style: normal;
+  color: var(--cor-texto-suave);
+  font-size: .9rem;
+}
+
+footer#rodape strong {
+  color: var(--cor-magma);
+}
+
+/* ============ RESPONSIVIDADE ============ */
+
+@media screen and (min-width: 700px) {
+  nav#menu label.menu_icon {
+    display: none;
+  }
+
+  nav#menu ul {
+    max-height: none;
+    overflow: visible;
+    display: flex;
+    gap: 6px;
+    flex-basis: auto;
+  }
+
+  nav#menu li a {
+    border-top: none;
+    padding: 22px 14px;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  aside.barra_lateral .card-video {
+    max-width: 100%;
+  }
+}

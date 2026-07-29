@@ -1,110 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-   <meta charset="UTF-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Vulkan</title>
-   <link rel="stylesheet" href="./css/vulcoes.css" /> 
-     
-   <link rel="shortcut icon" href="./imagens/icone_vulcao.png" /> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Conheça os principais tipos de vulcões: vulcão-escudo, cone de escória, estratovulcões e caldeiras." />
+  <title>Vulkan | Vulcões</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./imagens/icone_vulcao.png" />
 </head>
 
-<body tabindex="0">  
- <header>
-      <h1>Vulkan</h1>  
-		<img id="logo" src="./imagens/logo.jpg"/> 
- </header>
- 
- <nav id="menu">
-	<span class="menu_icon"></span> 
-    <ul>
+<body>
+  <header>
+    <h1>Vulkan</h1>
+    <img id="logo" src="./imagens/logo.jpg" alt="Logotipo do site Vulkan" />
+  </header>
+
+  <nav id="menu">
+    <div class="menu_faixa">
+      <span class="menu_marca">Vulkan</span>
+      <input type="checkbox" id="menu_toggle" />
+      <label class="menu_icon" for="menu_toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </label>
+      <ul>
         <li><a href="./index.html">Home</a></li>
-        <li><a href="./vulcoes.html">Vulcões</a></li>
-        <li><a href="./curiosidades.html">Curiosidade</a></li>
-		<li><a href="./midias.html">Filmes</a></li>
-		<li><a href="./documentarios.html">documentários</a></li>
-    </ul>
- </nav>
-<main id="container">		
+        <li><a href="./vulcoes.html" class="ativo">Vulcões</a></li>
+        <li><a href="./curiosidades.html">Curiosidades</a></li>
+        <li><a href="./midias.html">Filmes</a></li>
+        <li><a href="./documentarios.html">Documentários</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="container">
     <section id="secao">
-		<article class="artigo">
-			<h2>Tipos de vulcões</h2>
-				<p>Os vulcões são classificados de acordo com seu tipo de erupção(efusiva,explosiva,mista ou catastrófica), pela composição do magma expelido e frequência das erupções. Os principais tipos de vulcões são:</p>
-				<h3>Vulcão-escudo</h3>
-					<p>
-						Um vulcão-escudo é um tipo de vulcão que se caracteriza por ter uma forma ampla e arredondada, semelhante a um escudo.
-						Este tipo de vulcão é formado pela erupção de lavas fluidas que fluem facilmente.
-					</p>
-					<div id="boxess2">
-						<figure>
-							<img src="./imagens/stromboli.jpg"/>
-						</figure>
-					</div>
-					<div id="videos1">
-						<a href="https://www.youtube.com/watch?v=Znpwvd4tzow&ab_channel=EuronewsemPortugu%C3%AAs" target="_blank">
-						<img src="./imagens/vulcao_escudo.webp" width="100%" height="270">	
-						</a>
-					</div>
-				<h3>Cone de escória</h3>
-					<p>
-						São os tipos mais simples e mais comuns de vulcões estando presente em áreas onde a lava é viscosa, como as costas oceânicas sendo.  
-						Esse tipo de vulcão é relativamente pequenos, com alturas geralmente menores que 300 metros de altura.Suas erupções são geralmente 
-						explosivas e expelem grandes quantidades de cinzas e gases.São formados por escoria(framgmento de lava e cinzas) dando origem a solos
-						ferteis, uma vez que a escoria desses vulcões é rica em minerais  essenciais para o crescimento das plantas.
-					</p>
-					<div id="boxess2">
-						<figure>
-							<img src="./imagens/monte.jpg"/>
-						</figure>
-					</div>
-					<div id="videos">
-						<a href="https://www.youtube.com/watch?v=_I2QLSHND1U&ab_channel=SmithsonianChannel" target="_blank">
-						<img src="./imagens/monte2.jpg" width="100%" height="330">	
-						</a>
-					</div>
-				<h3>Estratovulcões</h3>
-					<p>
-						Os estratovulcões,tambem chamados de vulcões compostos, possuem o formato de cone, ou seja, são íngremes.Esse vulcões são  algumas das maiores, mais famosas e bonitas montanhas na Terra, incluindo entre elas, 
-						o Monte Fuji no Japão, o Monte Cotopaxi no Equador, o Vulcão Mayon nas Filipinas e o Monte Rainier nos E.U.A. São vulcões que se mantêm em longa atividade. 
-						A lava expelida possui alta viscosidade e, em muitos casos, ascende para fora dele com violência.Os estratovulcões são formados por erupções sucessivas de lava e tefra(mistura de cinzas, pedras e fragmentos de rocha). 
-						As erupções de lava e tefra se alternam, formando camadas que se acumulam ao longo do tempo para formar o vulcão.
-					</p>
-					<div id="boxess2">
-						<figure>
-							<img src="./imagens/fuji.jpg"/>
-						</figure>
-					</div>
-					<div id="boxess">
-						<figure>
-							<img src="./imagens/vesuvio.jpg"/>
-						</figure>
-					</div>
-				<h3>Caldeira ou supervulcão</h3>
-					<p>
-						Tipo de vulcão que possui grande diâmetro (algo entre 15 km2 e 100 km2).São depressões normalmente circulares formadas pelo colapso de um edifício vulcânico sobre uma câmara magmática superficial 
-						após uma erupção.As maiores erupções formadoras de caldeiras possuem um volume estimado de produtos erupcionados próximo de 3.500 km3, e disposição dos depósitos por mais de 25.000 km2. Entretanto, a freqüência de grandes erupções desse tipo são muito baixas. 
-						Erupções menores são mais freqüentes (próxima aos 100.000 anos) e possuem volumes de 500 km3.
-					</p>
-					<div id="boxess2">
-						<figure>
-							<img src="./imagens/caldera.png"/>
-						</figure>
-					</div>
-					<div id="videos1">
-						<a href="https://www.youtube.com/watch?v=QOzQl_tdqb8&ab_channel=SpaceToday" target="_blank">
-						<img src="./imagens/supervulcao.webp" width="100%" height="400">	
-						</a>
-					</div>
+      <article class="artigo">
+        <h2>Tipos de vulcões</h2>
+        <p>
+          Os vulcões são classificados de acordo com o tipo de erupção (efusiva, explosiva, mista ou catastrófica),
+          a composição do magma expelido e a frequência das erupções. Os principais tipos de vulcões são:
+        </p>
 
-		</article>
-	</section>
-</main>
+        <h3>Vulcão-escudo</h3>
+        <p>
+          Um vulcão-escudo é um tipo de vulcão que se caracteriza por ter uma forma ampla e arredondada, semelhante
+          a um escudo. Esse tipo de vulcão é formado pela erupção de lavas fluidas, que escoam com facilidade.
+        </p>
+        <div class="bloco-tipo">
+          <figure class="card-imagem">
+            <img src="./imagens/stromboli.jpg" alt="Vulcão-escudo Stromboli" />
+          </figure>
+          <a class="card-video" href="https://www.youtube.com/watch?v=Znpwvd4tzow" target="_blank" rel="noopener">
+            <img src="./imagens/vulcao_escudo.webp" alt="Vídeo sobre vulcões-escudo" />
+          </a>
+        </div>
 
-  <footer id="rodape">  
+        <h3>Cone de escória</h3>
+        <p>
+          São os tipos mais simples e mais comuns de vulcão, presentes em áreas onde a lava é viscosa, como costas
+          oceânicas. Esse tipo de vulcão é relativamente pequeno, com altura geralmente inferior a 300 metros. Suas
+          erupções costumam ser explosivas e expelem grandes quantidades de cinzas e gases. São formados por escória
+          (fragmentos de lava e cinzas), o que dá origem a solos férteis, já que essa escória é rica em minerais
+          essenciais para o crescimento das plantas.
+        </p>
+        <div class="bloco-tipo">
+          <figure class="card-imagem">
+            <img src="./imagens/monte.jpg" alt="Cone de escória vulcânica" />
+          </figure>
+          <a class="card-video" href="https://www.youtube.com/watch?v=_I2QLSHND1U" target="_blank" rel="noopener">
+            <img src="./imagens/monte2.jpg" alt="Vídeo sobre cones de escória" />
+          </a>
+        </div>
+
+        <h3>Estratovulcões</h3>
+        <p>
+          Os estratovulcões, também chamados de vulcões compostos, possuem formato cônico e íngreme. Estão entre as
+          maiores, mais famosas e mais belas montanhas da Terra, incluindo o Monte Fuji (Japão), o Cotopaxi
+          (Equador), o Vulcão Mayon (Filipinas) e o Monte Rainier (EUA). São vulcões que se mantêm ativos por longos
+          períodos. A lava expelida possui alta viscosidade e, em muitos casos, ascende com violência. Os
+          estratovulcões se formam por erupções sucessivas de lava e tefra (mistura de cinzas, pedras e fragmentos
+          de rocha), cujas camadas se acumulam ao longo do tempo até formar o vulcão.
+        </p>
+        <div class="bloco-tipo">
+          <figure class="card-imagem">
+            <img src="./imagens/fuji.jpg" alt="Monte Fuji, um estratovulcão no Japão" />
+          </figure>
+          <figure class="card-imagem">
+            <img src="./imagens/vesuvio.jpg" alt="Vesúvio, um estratovulcão na Itália" />
+          </figure>
+        </div>
+
+        <h3>Caldeira ou supervulcão</h3>
+        <p>
+          Tipo de vulcão com grande diâmetro (entre 15 km² e 100 km²). São depressões geralmente circulares,
+          formadas pelo colapso de um edifício vulcânico sobre uma câmara magmática superficial após uma erupção.
+          As maiores erupções formadoras de caldeiras têm volume estimado próximo de 3.500 km³ de material
+          expelido, distribuído por mais de 25.000 km². Erupções desse porte são raríssimas; as menores, com
+          volumes próximos de 500 km³, ocorrem com frequência aproximada de 100 mil anos.
+        </p>
+        <div class="bloco-tipo">
+          <figure class="card-imagem">
+            <img src="./imagens/caldera.png" alt="Vista aérea de uma caldeira vulcânica" />
+          </figure>
+          <a class="card-video" href="https://www.youtube.com/watch?v=QOzQl_tdqb8" target="_blank" rel="noopener">
+            <img src="./imagens/supervulcao.webp" alt="Vídeo sobre supervulcões" />
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer id="rodape">
     <address id="sobre">
+      Site <strong>Vulkan</strong> — trabalho acadêmico da disciplina de Programação Web.
     </address>
   </footer>
- </body>
+</body>
 </html>
