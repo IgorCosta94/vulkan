@@ -2,11 +2,7 @@
 
 Site institucional sobre vulcões, desenvolvido como trabalho da disciplina **Programação Web**. O projeto apresenta o que são vulcões, suas partes e tipos, além de curiosidades, filmes e documentários relacionados ao tema.
 
-[![Ver página publicada](https://img.shields.io/badge/demo-GitHub%20Pages-ff5722?style=for-the-badge)](https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/)
-
-🔗 **Acesse a página publicada:** [https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/](https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/)
-
-> Substitua `SEU-USUARIO` e `NOME-DO-REPOSITORIO` pelos valores reais assim que o GitHub Pages estiver ativado (veja a seção [Publicação](#-publicação-github-pages) abaixo).
+🔗 **Acesse a página publicada:** (https://igorcosta94.github.io/vulkan/)
 
 ## 🔗 Páginas
 
